@@ -9,6 +9,7 @@ const BLOG_POST = [
     image:
       "https://im.rediff.com/sports/2023/mar/15cristiano-ronaldo.jpg?w=670&h=900",
     desc: "having fun",
+    slug: "first-blog"
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const BLOG_POST = [
     image:
       "https://im.rediff.com/sports/2023/mar/15cristiano-ronaldo.jpg?w=670&h=900",
     desc: "having fun",
+    slug: "second-blog",
   },
 ];
 
@@ -28,7 +30,7 @@ function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <h1 className="text-center text-lg">Blog Page</h1>
+      <h1 className="text-center text-lg mx-1 my-4">BLOG PAGE</h1>
       {BLOG_POST.map((blog) => {
         return (
           <div key={blog.id} className="flex flex-col">
@@ -36,6 +38,7 @@ function Home() {
               title={blog.title}
               image={blog.image}
               desc={blog.desc}
+              slug={blog.slug}
             />
           </div>
         );

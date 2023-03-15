@@ -2,7 +2,7 @@ function BlogItem(props) {
   const { title, image, desc } = props;
   return (
     <>
-      <div className="max-w-sm mx-auto overflow-hidden rounded shadow-lg">
+      <div className="max-w-sm mx-auto my-5 overflow-hidden rounded hover:shadow-lg">
         <img className="w-full h-60" src={image} alt={title}></img>
         <div className="px-6 py-4 ">
           <div className="mb-2 text-xl font-bold">

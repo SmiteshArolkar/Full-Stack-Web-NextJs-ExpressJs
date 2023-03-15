@@ -28,7 +28,7 @@ function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <h1>Blog Page</h1>
+      <h1 className="text-center text-lg">Blog Page</h1>
       {BLOG_POST.map((blog) => {
         return (
           <div key={blog.id} className="flex flex-col">

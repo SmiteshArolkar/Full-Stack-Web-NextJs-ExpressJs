@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import BlogItem from "../components/blogItem/BlogItem";
+import initFirebase from "../firebase/initfirebase";
+
+initFirebase()
 
 const BLOG_POST = [
   {
